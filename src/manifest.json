@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Twitterのホームタブを消す",
   "description": "鬱陶しいホームタブを消して最新ツイートのみを表示します",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "permissions": [
     "scripting"
   ],
