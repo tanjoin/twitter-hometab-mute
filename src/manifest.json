@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Twitterのホームタブを消す",
+  "description": "鬱陶しいホームタブを消して最新ツイートのみを表示します",
+  "version": "0.0.1",
+  "permissions": [
+    "scripting"
+  ],
+  "icons": {
+    "128": "img/128.png",
+    "48": "img/48.png",
+    "16": "img/16.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://twitter.com/home",
+        "*://*.twitter.com/home"
+      ],
+      "js": [
+        "js/hometab-mute.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
