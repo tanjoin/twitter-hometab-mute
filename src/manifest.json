@@ -14,8 +14,8 @@
   "content_scripts": [
     {
       "matches": [
-        "*://twitter.com/home",
-        "*://*.twitter.com/home"
+        "*://twitter.com/*",
+        "*://*.twitter.com/*"
       ],
       "js": [
         "js/hometab-mute.js"
