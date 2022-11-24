@@ -1,14 +1,13 @@
 function muteHome() {
-  let title = document.querySelector('#react-root main h2 > span');
+  let title = document.querySelector('main div > h2 > span');
   let btn = document.querySelector('#react-root main [aria-haspopup="menu"]');
-  let bar = document.querySelector('#react-root main > div > div > div > div > div > div')
   if (title && window.location.href.includes("twitter.com/home")) {
     if (["ホーム", "Home", "Accueil", "Startseite", "الرئيسيّة", "Baile", "الرئيسيّة", "Inicio", "Trang chủ", ""].includes(title.textContent)) {
       btn.click();
       let menuItem = document.querySelector('[role="menuitem"]');
       menuItem.click();
     }
-    let bar = document.querySelector('#react-root main > div > div > div > div > div > div')
+    let bar = document.querySelector('#react-root main > div > div > div > div > div > div');
     bar.remove();
   }
 }
